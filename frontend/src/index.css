@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.screenContainer {
+    display: grid;
+    grid-template: "left app right" 1fr / 25fr 50fr 25fr;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    place-items: center;
+}
+
+.app {
+    grid-area: app;
+}
+
+.appConteiner {
+    display: grid;
+    grid-template:  10fr 80fr 10fr / 1fr;
+    grid-template-areas: "header" "main-area" "footer";
+    justify-items: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.head {
+    grid-area: header;
+    place-items: center;
+}
+
+.footer {
+    grid-area: footer;
+    place-items: center;
+}
+
+.main-area {
+    grid-area: main-area;
+    overflow: auto;
+    height: 100%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+span {
+    margin-left: 5px
+}
+
+
+/*
+.box {
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    padding: 8px;
+}
+*/
+
+.center{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .screenContainer {
+        display: grid;
+        grid-template: "left app right" 1fr / 0% 100% 0%;
+        width: 100vw;
+        height: 98vh;
+        margin-top: 2px;
+    }
+}
+
+span.loading {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+    border: 0.2em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: loading 0.75s linear infinite;
+    vertical-align: -0.143em;
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

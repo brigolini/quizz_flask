@@ -1,0 +1,6 @@
+flask==1.1.2
+flask-cors==3.0.9
+flask-jwt==0.3.2
+flask-Restful==0.3.8
+flask-SQLAlchemy==2.4.4
+pytest==6.1.2

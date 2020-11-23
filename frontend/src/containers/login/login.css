@@ -1,0 +1,22 @@
+.login {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr 2fr 2fr;
+    place-items: center center;
+    width: 20%;
+    height: 50%;
+}
+
+div {
+    width: 100%;
+}
+
+.error {
+    background-color: #fcd6d6;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
