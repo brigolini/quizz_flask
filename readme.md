@@ -5,6 +5,7 @@ This project was created by **Marcelo Sampaio Brigolini Silva** in order to fulf
 # To run the code
 1. Navigate do backend directory
 2. run docker-compose up 
+3. type "http://localhost:5000/index.html#/" in your browser
 
 ## A few comments
 
